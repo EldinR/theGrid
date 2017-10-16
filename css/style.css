@@ -1,0 +1,219 @@
+/* ==========================================
+	CSS styling for Awesome CSS Grid Website
+========================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	text-transform: uppercase;
+	background-color: #ededed;
+}
+
+.G {
+	display: grid;
+	grid-template-columns: 1fr 20% 1fr 20% 1fr;
+	grid-template-areas: 
+	". header header header ."
+	". one two three ."
+	". four five six ."
+	". seven eight nine ."
+	". footer footer footer .";
+	grid-gap:10px;
+	grid-auto-rows: minmax(150px,150px);
+	margin-top:75px;
+}
+
+.header,
+.one,
+.two,
+.three,
+.four,
+.five,
+.six,
+.seven,
+.eight,
+.nine,
+.footer {
+	background-color: white;
+	border: 1px solid #cccccc;
+	text-align: center;
+    padding-top: 65px;
+    color: #cccccc;
+}
+
+.header {
+	grid-area: header;
+}
+
+.one {
+	grid-area: one;
+}
+
+.one:hover {
+	background: #68bbe0;
+    color: #333;
+    transition: 1s;
+    box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    -webkit-transition: background-color 2s ease-out;
+    -moz-transition: background-color 2s ease-out;
+    -o-transition: background-color 2s ease-out;
+    transition: background-color 2s ease-out;
+}
+
+.two {
+	grid-area: two;
+}
+
+.two:hover {
+	background: #39CCCC;
+    color: #333;
+    transition: 1s;
+    box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    -webkit-transition: background-color 2s ease-out;
+    -moz-transition: background-color 2s ease-out;
+    -o-transition: background-color 2s ease-out;
+    transition: background-color 2s ease-out;
+}
+
+.three {
+	grid-area: three;
+}
+
+.three:hover {
+	background: #9ACD32;
+    color: #333;
+    transition: 1s;
+    box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    -webkit-transition: background-color 2s ease-out;
+    -moz-transition: background-color 2s ease-out;
+    -o-transition: background-color 2s ease-out;
+    transition: background-color 2s ease-out;
+}
+
+.four {
+	grid-area: four;
+}
+
+.four:hover {
+	background: #FF4136;
+    color: #333;
+    transition: 1s;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+    -webkit-transition: background-color 2s ease-out;
+    -moz-transition: background-color 2s ease-out;
+    -o-transition: background-color 2s ease-out;
+    transition: background-color 2s ease-out;
+}
+
+.five {
+	grid-area: five;
+}
+
+.five:hover {
+	background: #2ECC40;
+    color: #333;
+    transition: 1s;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+    -webkit-transition: background-color 2s ease-out;
+    -moz-transition: background-color 2s ease-out;
+    -o-transition: background-color 2s ease-out;
+    transition: background-color 2s ease-out;
+}
+
+.six {
+	grid-area: six;
+}
+
+.six:hover {
+	background: #F012BE;
+    color: #333;
+    transition: 1s;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+    -webkit-transition: background-color 2s ease-out;
+    -moz-transition: background-color 2s ease-out;
+    -o-transition: background-color 2s ease-out;
+    transition: background-color 2s ease-out;
+}
+
+.seven {
+	grid-area: seven;
+}
+
+.seven:hover {
+	border-radius: 50%;
+    transition: 1s ease;
+    background: #CBE32D;
+    color: black;
+}
+
+.eight {
+	grid-area: eight;
+}
+
+.eight:hover {
+	border-radius: 50%;
+    transition: 1s ease;
+    background: #FF69B4;
+    color: black;
+}
+
+.nine {
+	grid-area: nine;
+}
+
+.nine:hover {
+	border-radius: 50%;
+    transition: 1s ease;
+	background: #B0C4DE;
+	color: black;
+}
+
+.footer {
+	grid-area: footer;
+}
+
+
+p {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: er-letters 8s linear 0s infinite alternate;
+  margin-top: 0px;
+}
+
+@keyframes er-letters {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+
+/*
+
+@media screen and (min-width: 736px) {
+	.er-grid {
+		display: grid;
+		grid-template-columns: 1fr 300px 2fr 300px 1fr; 
+		grid-template-areas: 
+		" .header header header ."
+		". menu menu menu ."
+		". left content right ."
+		". footer footer footer .";
+		grid-gap: 10px;
+	}
+
+}
+
+*/
